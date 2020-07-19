@@ -1,0 +1,25 @@
+{
+  "name": "Dodgeball",
+  "version": "2.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "https://github.com/hucario",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "https://github.com/hucario/express-ejs-layouts/tarball/master",
+    "mongodb": "^3.3.4",
+    "node-html-encoder": "0.0.2",
+    "nodemailer": "^6.2.1",
+    "nodemon": "^1.19.0",
+    "socket.io": "^2.2.0",
+    "socketio": "^1.0.0"
+  }
+}

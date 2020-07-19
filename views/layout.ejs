@@ -1,0 +1,42 @@
+<!-- 	hi :) -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/globalstyles.css" type="text/css" />
+		<%
+			if (showConsentQuestion) {
+			%>
+			<link rel="stylesheet" href="/consent/consent.css" type="text/css" />
+			<%
+			}
+		%>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/globalscript.js"></script>
+	</head>
+	<body>
+		<div class="main">
+		<%- defineContent("main") %>
+		</div>
+		<div class="footer">	
+			©2019
+		</div>
+		<%
+			if (showConsentQuestion) {
+			%>
+			<div id="consentQuestion">
+				<h1>Hey!</h1>
+				Because I'm not gay like <i>most</i> webmasters, this site doesn't track by default.<br>
+				(I do set a cookie that says to not show this again, but it's not unique to anyone.)<br>
+				However, it's very nice to know how many unique visitors I have, so if you would just press this button to add a unique cookie, that would be great :)
+				<button id="consentButton">this button (everyone's a comedian)</button><br>
+				<a href="/consent/consentcode.js">Here's the relevant code on my side, if you're curious.</a>
+				<button id="closeConsent"></button>
+			</div>
+			<script src="/consent/consent.js"></script>
+			<%
+				}
+		%>
+	</body>
+</html>

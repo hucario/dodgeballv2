@@ -1,0 +1,44 @@
+ <%- contentFor("main") %>
+		<title>whoops</title>
+		<style>
+			#flex1 {
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				align-items: center;
+				background-color: lightgrey;
+				font-family: sans-serif;
+			} 
+		
+			#flex2 {
+				width: 100vw;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+			}
+	
+			#container {
+				text-align: center;
+				background-color: white;
+				padding: 3vw;
+				border-radius: 2vw;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="flex1">
+			<div id="flex2">
+				<div id="container">
+					<h1>you got lost</h1>
+					<h2><a href="javascript: window.history.back(1);" >this'll probably take you back to where you were, though</a></h2>
+					<h3><a href="/">and if that doesn't work, this'll take you to the home</a></h3>
+					<h5>(error code 404: resource not found)</h3>
+				</div>
+			</div>
+		</div>
+
